@@ -16,7 +16,59 @@ Text Domain: enigma
 */
 /* Custom style rules */
 
+/* ******** Home page: Menu section *********** */
+
 .navigation_menu {
     background-color: #ff8;
     border-top: 2px solid #31a3dd;
+}
+
+
+/* ******** Home page: Service section *********** */
+.enigma_service
+{
+	background-color:#FAFAFA;
+}
+.echild_home_desc 
+{
+	color: #333;
+	margin-top: 1em;
+	margin-bottom: 3em;
+	
+}
+.echild_home_desc p
+{
+	border: ridge #0592D2 4px;
+	border-radius: 25px;
+	padding: .5em;
+	margin: 0 .7em;
+	font-style: italic;
+	text-align: center;
+}
+
+/* Partners */
+.enigma_heading_title h3
+{
+	border-bottom:ridge #0592D2 4px;
+}
+.enigma_service_iocn i
+{
+	font-size: 40px!important;	
+}
+.enigma_service_detail  a
+{
+	color: #03577E;	
+}
+.echild_home_partners
+{
+	float: none;
+	display: inline-block;
+}
+.isotope
+{
+	text-align: center;
+}
+.enigma_service_detail
+{
+	text-align: left;
 }

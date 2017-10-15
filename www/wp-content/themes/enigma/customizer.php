@@ -4,6 +4,7 @@
 add_action( 'customize_register', 'weblizar_gl_customizer' );
 
 function weblizar_gl_customizer( $wp_customize ) {
+	
 	wp_enqueue_style('customizr', WL_TEMPLATE_DIR_URI .'/css/customizr.css');
 	wp_enqueue_style('FA', WL_TEMPLATE_DIR_URI .'/css/font-awesome-4.7.0/css/font-awesome.min.css');
 	
@@ -439,11 +440,11 @@ $wp_customize->add_section(
 	
 	/* Service Options */
 	$wp_customize->add_section('service_section',array(
-	'title'=>__("Service Options",'enigma'),
-	'panel'=>'enigma_theme_option',
-	'capability'=>'edit_theme_options',
-    'priority' => 35,
-	'active_callback' => 'is_front_page',
+		'title'=>__("Service Options",'enigma'),
+		'panel'=>'enigma_theme_option',
+		'capability'=>'edit_theme_options',
+		'priority' => 35,
+		'active_callback' => 'is_front_page',
 	));
 	$wp_customize->add_setting(
 		'enigma_options[services_home]',
@@ -455,6 +456,28 @@ $wp_customize->add_section(
 		)
 	);
 	
+	/* *********** Customization ********** */
+	// $wp_customize->add_setting(
+		// 'home_service_Desc',
+		// array(
+			// 'default'=>esc_attr($wl_theme_options['home_service_Desc']),
+			// 'capability'=>'edit_theme_options',
+			// 'sanitize_callback'=>'enigma_sanitize_text',
+			// 'transport'=>'postMessage',
+		// )
+	// );
+	// $wp_customize->add_control( 
+		// new One_Page_Editor(
+			// $wp_customize, 'home_service_Desc', array(
+				// 'label'=> __('Home Description', 'enigma'),
+				// 'section'=> 'service_section',
+				// 'active_callback' => 'show_on_front',
+				// 'include_admin_print_footer' => true,
+				// 'settings'=> 'home_service_Desc'
+			// )
+		// ) 
+	// );
+	/* *********** Customization ********** */
 	
 	$wp_customize->add_setting(
 	'enigma_options[home_service_heading]',
@@ -467,11 +490,13 @@ $wp_customize->add_section(
 			)
 	);
 	$wp_customize->add_control( 'home_service_heading', array(
-		'label'        => __( 'Home Service Title', 'enigma' ),
+		'label'        => __( 'Home Title', 'enigma' ),
 		'type'=>'text',
 		'section'    => 'service_section',
 		'settings'   => 'enigma_options[home_service_heading]'
 	) );
+
+	
 	$wp_customize->add_setting(
 	'enigma_options[service_1_icons]',
 		array(
@@ -1351,6 +1376,8 @@ $wp_customize->add_section(
 	// home layout close //
 }
 function enigma_sanitize_text( $input ) {
+	//if ($input == 'a')
+		//echo "<script type=\"text/javascript\">alert('$input');</script>";
     return wp_kses_post( force_balance_tags( $input ) );
 }
 function enigma_sanitize_checkbox( $input ) {
@@ -1610,7 +1637,11 @@ function sanitize_json_string($json){
     foreach (json_decode($json,true) as $value) {
         $sanitized_value[] = esc_attr($value);
     }
+	
+	//echo "<script type=\"text/javascript\">alert('$json' . \"test\");</script>";
+	
     return json_encode($sanitized_value);
+	
 }
 
 if ( class_exists( 'WP_Customize_Control' ) && ! class_exists( 'One_Page_Editor' ) ) :
@@ -1626,7 +1657,11 @@ class One_Page_Editor extends WP_Customize_Control {
 		}
 		if ( ! empty( $args['teeny'] ) ) {
 			$this->teeny = $args['teeny'];
+			
 		}
+		//if ( $id == 'home_service_Desc')
+//			echo "<script type=\"text/javascript\">alert('$id');</script>";
+		
 	}
 	/* Enqueue scripts */
 	public function enqueue() {

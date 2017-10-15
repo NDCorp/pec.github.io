@@ -78,7 +78,9 @@
 			'developed_by_text' => __('Theme Developed By', 'enigma' ),
 			'developed_by_weblizar_text' => __('Weblizar Themes', 'enigma' ),
 			'developed_by_link' => 'http://weblizar.com/',
+			
 			'services_home'=>'1',
+			//'home_service_desc' => __('Describe us', 'enigma' ),
 			'home_service_heading' => __('Our Services', 'enigma' ),
 			'service_1_title'=>__("Idea",'enigma' ),
 			'service_1_icons'=>"fa-google",

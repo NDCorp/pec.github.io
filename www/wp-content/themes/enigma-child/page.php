@@ -1,15 +1,13 @@
-<?php //Template Name:Page With Left Sidebar
-get_header(); 
+<?php get_header(); 
 get_template_part('breadcrums'); ?>
 <div class="container">
 	<div class="row enigma_blog_wrapper">
-	<?php get_sidebar(); ?>	
 	<div class="col-md-8">
-	<?php get_template_part('post','page'); 
+	<?php get_template_part('post','page'); ?>	
+	</div>
+	<?php get_sidebar(); 
 	
 	?>	
-	
-	</div>	
 	</div>
 </div>	
 <?php get_footer(); ?>

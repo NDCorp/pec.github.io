@@ -352,7 +352,6 @@ line-height: 26px;
 }
 .enigma_service_detail h3{
 	font-size: 24px;
-	
 	letter-spacing: normal;
 	line-height: 32px;
 	word-wrap:break-word;
@@ -616,6 +615,7 @@ line-height: 26px;
     -ms-transition-duration: 0.8s;
     -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
+	
 }
 
 .isotope {
