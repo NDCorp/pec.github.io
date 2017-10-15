@@ -1,0 +1,14 @@
+/* Contains default enigma-child css */
+
+/** service  section css ***/
+.enigma_service_iocn
+{
+	border: 4px double #9B9B9B;
+	background-color:#333;
+	background-size: 100% 200%;
+	background-image: linear-gradient(to bottom, #333 50%, #fff 50%);
+}
+.enigma_service_area:hover .enigma_service_iocn i 
+{
+	color:#9B9B9B;
+}

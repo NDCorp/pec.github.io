@@ -13,8 +13,6 @@ if ($wl_theme_options['_frontpage']=="1" && is_front_page())
 	}
 } else {
 	
-	//echo "<div style=\"height:10em; background-color:gray;\">test</div>";
-	
 	if($wl_theme_options['services_home'] == "1") {
 	get_template_part('home','services'); 
 	}
