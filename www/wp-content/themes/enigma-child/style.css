@@ -14,20 +14,39 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, three-columns, four-columns, custom-menu, right-sidebar, custom-background, featured-image-header, sticky-post, theme-options, threaded-comments, featured-images, flexible-header, translation-ready ,rtl-language-support , E-Commerce , Education , Entertainment , Portfolio
 Text Domain: enigma
 */
+/*
+	font-family: Georgia,Times,Times New Roman,serif; 
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	
+	font-family: Consolas,monospace;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-family: Arial,Helvetica,sans-serif;
+	content: '\f002';
+	font-family:FontAwesome
+	font-family:icomoon
+*/
+
 /* Custom style rules */
-
-/* ******** Home page: Menu section *********** */
-
-.navigation_menu {
-    background-color: #ff8;
-    border-top: 2px solid #31a3dd;
+.main_container
+{
+	background-color: #FAFAFA;
 }
-
+.container .enigma_blog_wrapper
+{
+	margin-top: 24px;
+	margin-bottom: 30px;
+}
+.container .echild_wrapper
+{
+	text-align: center;
+}
 
 /* ******** Home page: Service section *********** */
 .enigma_service
 {
-	background-color:#FAFAFA;
+	background-color: #FAFAFA;
+	padding-top: 40px!important;
+	padding-bottom: 20px!important;
 }
 .echild_home_desc 
 {
@@ -46,7 +65,7 @@ Text Domain: enigma
 	text-align: center;
 }
 
-/* Partners */
+/* Services */
 .enigma_heading_title h3
 {
 	border-bottom:ridge #0592D2 4px;
@@ -54,6 +73,10 @@ Text Domain: enigma
 .enigma_service_iocn i
 {
 	font-size: 40px!important;	
+}
+.enigma_service_area
+{
+	margin-bottom: 50px!important;
 }
 .enigma_service_detail  a
 {
@@ -63,6 +86,7 @@ Text Domain: enigma
 {
 	float: none;
 	display: inline-block;
+	vertical-align: top;
 }
 .isotope
 {
@@ -72,3 +96,640 @@ Text Domain: enigma
 {
 	text-align: left;
 }
+.enigma_service_detail p
+{
+	color: #333;
+}
+
+/* Partners */
+#enigma_portfolio_section	/*enima_photo_gallery*/
+{
+
+	position: relative;
+	text-align: center;
+	
+}
+.enima_photo_gallery .pull-left
+{
+	float: none!important;
+	display: inline-block;
+	
+}
+
+
+
+
+
+/**************** Event Page *******************/
+
+.echild_col-md-8
+{
+	width: 56%;
+	display: inline-block;
+}
+.col-md-8
+{
+	float: none;
+}
+.echild_event_container
+{
+	padding: 30px 15px;	/* 30px 15px*/
+}
+.echild_event
+{
+	border-radius: 20px 20px 0 0;
+}
+.echild_event_title 
+{
+	padding: 10px;
+}
+.echild_event_title h3
+{
+	margin-top: 10px;
+	text-transform: capitalize;
+}
+.echild_event_title a
+{
+	color: #FAFAFA;	/*333;*/
+}
+.echild_event_title a:hover
+{
+	font-weight: bold; 	
+}
+.echild_event_infogroup
+{
+	margin-top: 90px;	/********** Change for smaller screen divices ***********/
+	padding: 5px;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #FAFAFA;
+}
+.echild_event_info
+{
+	/*padding: 5px;
+	background-repeat: repeat;
+	text-align: center;
+	*/
+	height: 300px;	
+}
+.echild_event_imgdefault
+{
+	background-image: url("http://localhost:8001/wp-content/uploads/2017/10/tiled_dark.jpg"); /*default_u_event2.jpg");*/
+}
+.echild_event_date
+{
+	vertical-align: center;
+	border: solid 1px #575757;
+	border-radius: 100%;
+	display: inline-block;
+	width: 8em;	
+	background-color: rgba(224,224,224, .5); /*#575757;
+	opacity: .5;
+	filter: alpha(opacity=50);  For IE8 and earlier */
+	padding: 12px;
+}
+.echild_event_desc p /********** Change for smaller screen divices ***********/
+{
+	text-align: justify;
+	padding: 5px;
+	margin: 0;
+	font-size: inherit;
+	line-height: 1.25em;
+	font-style: italic;
+	font-weight: normal;
+}
+.echild_event_line
+{
+    margin: 0.1em auto;
+    border: groove 2px #9B9B9B;
+}
+
+/************** Event Page: Aside ***************/
+.echild-sidebar-col-md-4
+{
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+	position: sticky;
+	top: 65px;
+}
+.col-md-4
+{
+	float: none;
+}
+.echild_aside
+{
+	margin: 30px 15px; 
+	padding: 5px; 
+	background-color: #575757; 
+	color: white; 
+	border: groove white 3px; 
+	border-radius: 20px;
+} 
+.echild_aside_title
+{
+	padding: 5px; 
+	text-align: center; 
+	font-size: 18pt;
+	border-radius: 15px;
+	font-family: Georgia, Times, 'Times New Roman', serif; 
+}
+.echild_aside_content
+{
+	padding: 5px 10px; 
+	background-color: #FAFAFA; 
+	border: solid #E0E0E0 2px; 
+	border-radius: 15px; 
+	box-sizing: border-box;
+}
+.echild_aside_post
+{
+	text-align: left;
+}
+.echild_aside_post ul
+{
+	list-style-type: none;
+	margin: 5px 0;
+	padding: 0;
+}
+.echild_aside_post li 
+{
+	margin: 5px;
+	padding: 0;
+	font-size: 10pt;
+	line-height: 1.5;
+	border-top: 1px solid #95C7E8;
+	border-bottom: 1px solid #95C7E8;
+	color: 95C7E8;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-transform: capitalize;
+}
+.echild_aside_post li:last-child 
+{
+	;
+}
+.echild_aside_post li a 
+{
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-o-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+	transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+.echild_aside_post li a:hover 
+{
+	font-size: 10.5pt;
+	background: #95C7E8;
+  	border-top: 1px solid #0592D2;
+	border-bottom: 1px solid #0592D2;
+	color: #FAFAFA;
+}
+
+/************** Contact Form *****************/
+*
+{
+	margin: 0;
+}
+.echild_contact_form 
+{
+	margin: 25px auto;
+	padding: 5px;
+	width: 600px; /*to delete */
+	color: #575757;
+}
+
+.echild_contact_form label
+{
+	margin-bottom: 1px;
+	font-weight: normal;
+	font-size: 12pt;
+	color: #333;
+}
+.echild_contact_form input, .echild_contact_form textarea
+{
+	border: solid #333 1px;
+	border-radius: 4px;
+	background-color: #FAFAFA;
+	color: black;
+	font-size: 12pt;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 4px;
+	margin: 0 0 5px;
+}
+.echild_contact_form_message
+{
+	text-align: center;
+	color: #0592D2;
+	margin: 5px;
+	padding: 10px;
+	font-size: 11pt;
+}
+.person_name, .person_location
+{
+	text-align: center;
+}
+.person_name label, .person_location label
+{
+	display: block;
+	text-align: left;
+}	
+.group_name, .group_location
+{
+	display: inline-block;
+	width: 49.3%;
+}
+.message_content
+{
+	font-size: 11pt;
+}
+
+.echild_contact_form .block_button
+{
+	border: none;
+	padding: 2px;
+	margin: 10px;
+}
+.echild_contact_form .block_button div
+{
+	display: inline;  
+}
+.echild_contact_form .block_button div:hover
+{
+	border: groove #0592D2 2px;
+	background-color: #0592D2;
+	background: linear-gradient(#0592D2, #03577E, #0592D2);		/* standard */
+	background: -moz-linear-gradient(#0592D2, #03577E, #0592D2);	/* firefox 3.6 */
+	background: -o-linear-gradient(#0592D2, #03577E, #0592D2);	/* opera 11.1 */
+	background: -webkit-linear-gradient(#0592D2, #03577E, #0592D2);	/*safari 5.1 */
+}
+.echild_contact_form .block_submit, .block_reset
+{
+	border: groove #63C5EF 1px;
+	border-radius: 4px;
+	background-color: #63C5EF;
+	padding:2px;
+}
+.echild_contact_form .block_submit button, .block_reset button
+{
+	border: none;
+	border-radius: 4px;
+	background: transparent;    /* rgba(5,146,210, 0) doen't work IE9*/
+	color: #FAFAFA;
+	font-size: 10pt;
+	font-weight: bold;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	padding: 6px;
+}
+.echild_contact_form div.block_submit
+{
+	float: left;
+}   
+.echild_contact_form div.block_reset
+{
+	float: right;
+}
+
+/************ Contact page ************/
+.contact_container_1, .contact_container_2
+{
+	padding-top: 15px;	/* 40*/
+	padding-bottom: 20px;	/* 50*/
+	margin: 0;
+}
+.contact_container_1
+{
+	background-color: rgba(250,250,250, .1);	/*rgba(255,218,16, .3); */
+	border-top: 1px solid #DEE1E2;
+	border-bottom: 1px solid #DEE1E2;
+}
+.contact_container_2
+{
+	background-color: #FAFAFA;
+}
+
+/*.container
+{
+	
+}
+*/
+.contact_main_text
+{
+	margin: 15px 15px 25px;
+	padding: 15px 5px;
+	border-bottom: groove 4px #FFBE10
+}
+.contact_main_text p
+{
+	color: #333;
+	text-align: center;
+	font-size: 26pt;
+	line-height: 1.5;
+	font-family: Georgia,Times,Times New Roman,serif; 
+}
+.contact_section_name 
+{
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.contact_section_name h3
+{
+	font-size: 24pt;
+	color: #333;
+	font-family: inherit;
+	font-weight: normal;
+}
+.contact_map_info
+{
+	margin: 15px auto; 
+	padding: 5px 15px; 
+	background-color: #91101C;
+	text-align: center;
+}
+.contact_map
+{
+	margin: 15px 10px 0;  
+	/*border: solid 1px yellow;*/
+	display: inline-block;
+}
+.contact_info
+{
+	text-align: left;
+	margin: 15px 10px; 
+	border-left: groove 2px #FFDA10;
+	border-right: groove 2px #FFDA10;
+	padding: 5px 15px; 
+	content: '\f002';
+	font-family: FontAwesome;
+	display: inline-block;
+	vertical-align: top;
+}
+.contact_info h3
+{
+	margin: 0 auto;
+	padding: 0 0px 10px;
+	color: #FAFAFA;
+	font-size: 24pt;
+	font-weight: normal;
+	font-family: inherit;
+}
+.contact_info_detail
+{
+	margin: 15px 0;
+	padding: 10px;
+	color: #E0E0E0;
+}
+.contact_info_detail p
+{
+	margin: 0 0 15px 0;
+	font-size: 16pt;
+	font-family: inherit;
+}
+.contact_office_hours
+{
+	margin: 15px 10px; 
+	border-top: solid 4px #f5f5f5;
+	border-bottom: solid 4px #f5f5f5;
+	padding: 4% 5px; 
+	display: inline-block; 
+	content: '\f002';
+	font-family: FontAwesome;
+	display: inline-block;
+	vertical-align: top;
+}
+.contact_office_hours h3
+{
+	line-height: small;
+	margin: 0 auto;
+	padding: 0 0px 10px;
+	color: #FAFAFA;
+	font-size: 20pt;
+	font-weight: normal;
+	font-family: inherit;
+	/*text-decoration: underline;*/
+}
+.contact_office_hours ul, .contact_office_hours p
+{
+	text-align: left;
+	color: #E0E0E0;
+}
+
+.contact_office_hours ul
+{
+	list-style-type: none;
+	margin: 5px 0;
+	padding: 0;
+}
+.contact_office_hours li 
+{
+  font: 11pt/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  border-bottom: 1px solid #FAFAFA;
+}
+.contact_office_hours p
+{
+	margin-top: 15px;
+	color: #FAFAFA;
+	font-size: 10pt;
+}
+/*************** button: the same style for Contact page **********/
+.gradient_soft_button
+{
+	background-color: #63C5EF;
+	background: linear-gradient(#63C5EF, #0592D2, #63C5EF);		/* standard */
+	background: -moz-linear-gradient(#63C5EF, #0592D2, #63C5EF);	/* firefox 3.6 */
+	background: -o-linear-gradient(#63C5EF, #0592D2, #63C5EF);	/* opera 11.1 */
+	background: -webkit-linear-gradient(#63C5EF, #0592D2, #63C5EF);	/*safari 5.1 */
+}
+.gradient_hard_button
+{
+	background-color: #0592D2;
+	background: linear-gradient(#0592D2, #03577E, #0592D2);		/* standard */
+	background: -moz-linear-gradient(#0592D2, #03577E, #0592D2);	/* firefox 3.6 */
+	background: -o-linear-gradient(#0592D2, #03577E, #0592D2);	/* opera 11.1 */
+	background: -webkit-linear-gradient(#0592D2, #03577E, #0592D2);	/*safari 5.1 */
+}
+/*************** Gallery Page ***************/
+.gallery_title
+{
+	padding: 15px 5px;
+	margin: 15px 15px 25px;
+	color: #333;
+	border-bottom: groove 4px #FFBE10;	
+}
+.gallery_title p
+{
+    color: #333;
+    text-align: center;
+    font-size: 26pt;
+    line-height: 1.5;
+    font-family: Georgia,Times,Times New Roman,serif;	 
+}
+.gallery_wrapper
+{
+	padding: 0 5px;
+	margin: 15px 15px 0;
+	color: #333;
+}
+.gallery_wrapper .gallery_events
+{
+	padding: 5px;
+	text-align: center;
+}
+.gallery_events .gallery_events_button 
+{
+	margin: 2px;
+	padding: 4px;
+	display: inline-block;
+	border: groove 1px #63C5EF;
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;	
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #FAFAFA;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.gallery_events div:hover
+{
+	border-color: #0592D2;
+	cursor: pointer;
+	background-color: #0592D2;
+	background: linear-gradient(#0592D2, #03577E, #0592D2);		/* standard */
+	background: -moz-linear-gradient(#0592D2, #03577E, #0592D2);	/* firefox 3.6 */
+	background: -o-linear-gradient(#0592D2, #03577E, #0592D2);	/* opera 11.1 */
+	background: -webkit-linear-gradient(#0592D2, #03577E, #0592D2);	/*safari 5.1 */
+}
+.gallery_wrapper .gallery_event_slide
+{
+	margin: 5px 0;
+	padding: 10px;
+	/*border: solid 2px red;*/
+	height: 100%;
+	width: 100%;
+}
+.gallery_wrapper .gallery_event_info
+{
+	padding: 5px;
+	border-top: groove 2px #ffbe10;
+}
+.gallery_event_info p
+{
+	margin: 2px;
+	padding: 2px;
+	font-size: 13pt;
+	color: #333;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; 
+}
+#gallery_event_date
+{
+	text-align: right;
+}
+
+/************* Objectives and Vision page *****************/
+.history
+{
+	width: 96%;
+	/*border: solid #E0E0E0 1px;*/ 
+	margin: 0 auto;
+	padding: 2px;
+	text-align: center;  
+	/*background-color: #ffffff;*/ 
+	 
+}
+.history_wrapper
+{
+	overflow: auto; 
+	height: 250px; 
+	width: 32%; 
+	border: solid #575757 1.5px; 
+	margin: 5.5px;
+	padding: 3px; 
+	vertical-align: top; 
+	display: inline-block; 
+	text-align: left; 
+	color: #FAFAFA;
+	/*background-color: #03577E; */
+}
+.history_title
+{
+	height: 12%; 
+	border-bottom: solid #03577E 1px;
+	padding: 2px 3px; 
+	font-size: 14pt; 
+	background-color: #0592D2;  
+	
+}
+.history_content
+{
+	min-height: 85%; 
+	margin: 6px 2px 0;
+	padding: 4px 6px; 
+	font-size: 10pt; 
+	line-height: 18px;
+	background-color: #575757;
+}
+
+/* Objective */
+.objectives
+{
+	width: 96%; 
+	margin: 10px auto;
+	padding: 2px; 
+}
+.objectives div, .objectives p
+{
+	text-align: center; 
+	margin: 1px auto; 
+	font-size: 11pt;
+	color: #333;
+}
+.objectives_long
+{
+	width: 100%; 
+	padding: 3px 3px 10px;
+	border-bottom: solid #575757 7px; 
+}
+.objectives_mid
+{
+	width: 70%; 
+	padding: 3px 3px 10px;
+	border-bottom: solid #9B9B9B 5px; 
+}
+.objectives_short
+{
+	width: 40%; 
+	padding: 3px 3px 10px;
+	border-bottom: solid #E0E0E0 2px; 
+}
+.objectives_shape
+{
+	width: 60px; 
+	height: 60px; 
+	border-top: solid #E0E0E0 60px; 
+	border-left: solid transparent 60px; 
+	border-right: solid transparent 60px; 
+	margin: 0px auto;
+
+}
+/* Vision */
+.vision
+{
+	/*border: solid #E0E0E0 2px;*/
+	border-radius: 10px; 
+	padding: 5px; 
+	width: 96%; 
+	margin: 0 auto; 
+	background-color: #0592D2; 
+}
+.vision p
+{
+	font-size: 12pt; 
+	color: #fafafa;
+}
+
+

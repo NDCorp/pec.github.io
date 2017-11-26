@@ -1,0 +1,259 @@
+/*
+	header and footer CSS
+*/
+/************** HEADER *************/
+.hd_cover
+{
+	background-color: rgba(145,16,28, .95);
+}
+.logo a, .logo p
+{
+	display: inline-block;
+}
+.logo a h1
+{
+	color: #fafafa;
+}
+.logo p
+{
+	vertical-align: bottom;
+	margin: 0 5px 5px;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif!important;
+	color: #FAFAFA!important;
+	font-size: 14pt;
+}
+
+/************* MENU ***************/
+.navigation_menu
+{
+    background-color: #91101C;
+    border-top: groove 1px #FFBE10;	
+	margin: 1px 0;
+}
+.navigation_menu .container
+{
+	;
+}
+.navigation_menu .container .navbar
+{
+	margin-bottom: 0px;
+}
+.navigation_menu .container .navbar .navbar-header > button,
+.navigation_menu .container .navbar .navbar-collapse
+{
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+.navbar-collapse > div > ul.navbar-nav
+{
+	float: right;
+}
+ul.navbar-nav > li 
+{
+	margin-right: 5px!important;
+}
+ul.navbar-nav > li > a
+{
+	font-size: 10pt!important;
+	font-weight: bold!important;
+	padding: 5px 15px!important;
+	border: solid 1px #E0E0E0;
+	color: #333!important;
+	background-color: #9B9B9B!important; 
+	background: linear-gradient(#E0E0E0, #9B9B9B, #E0E0E0);		/* standard */
+	background: -moz-linear-gradient(#E0E0E0, #9B9B9B, #E0E0E0);	/* firefox 3.6 */
+	background: -o-linear-gradient(#E0E0E0, #9B9B9B, #E0E0E0);	/* opera 11.1 */
+	background: -webkit-linear-gradient(#E0E0E0, #9B9B9B, #E0E0E0);	/*safari 5.1 */
+
+	/* font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif!important; */
+}
+ul.navbar-nav > .active > a,
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus
+{
+	color: #FAFAFA!important;
+	border: solid 1px #FAFAFA;
+	border-radius: 5px!important;
+	background-color: #0592D2!important; 
+	background: linear-gradient(#63C5EF, #0592D2, #63C5EF);		/* standard */
+	background: -moz-linear-gradient(#63C5EF, #0592D2, #63C5EF);	/* firefox 3.6 */
+	background: -o-linear-gradient(#63C5EF, #0592D2, #63C5EF);	/* opera 11.1 */
+	background: -webkit-linear-gradient(#63C5EF, #0592D2, #63C5EF);	/*safari 5.1 */
+	box-shadow: none!important; /*0 0 1px 1px #E0E0E0!important; */
+}
+.navbar-nav .open > a,
+.navbar-nav .open > a:hover,
+.navbar-nav .open > a:focus
+{
+	border: solid 1px #FAFAFA;
+	box-shadow: none!important;
+	border-radius: 5px!important;
+}
+ul.navbar-nav > li > a > i
+{
+	display: none;
+}
+/* navbar button for small screens */
+.navbar-header > button 
+{
+	background-color: #9B9B9B!important;
+	border: solid 1px #FAFAFA!important;
+}
+.navbar-header > button > span
+{
+	color: #FAFAFA;
+}
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus
+{
+	background-color: #0592D2!important;
+}
+
+/* drp-down */
+ul.dropdown-menu 
+{
+	margin-top: .5px!important;
+	/* min-width: 182px; */
+	border-radius: 5px!important;
+	background: transparent;
+}
+ul.dropdown-menu > li > a
+{
+	font-size: 10pt!important;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #333;
+	background-color: #E0E0E0; 
+	background: linear-gradient(#FAFAFA, #E0E0E0, #FAFAFA);		/* standard */
+	background: -moz-linear-gradient(#FAFAFA, #E0E0E0, #FAFAFA);	/* firefox 3.6 */
+	background: -o-linear-gradient(#FAFAFA, #E0E0E0, #FAFAFA);	/* opera 11.1 */
+	background: -webkit-linear-gradient(#FAFAFA, #E0E0E0, #FAFAFA);	/*safari 5.1 */
+	border-radius: 5px!important;
+	
+}
+ul.dropdown-menu > li > a:hover,
+ul.dropdown-menu > li > a:focus 
+{
+	
+	color: #FAFAFA!important;
+	background-color: #03577E!important; 
+	background: linear-gradient(#0592D2, #03577E, #0592D2);		/* standard */
+	background: -moz-linear-gradient(#0592D2, #03577E, #0592D2);	/* firefox 3.6 */
+	background: -o-linear-gradient(#0592D2, #03577E, #0592D2);	/* opera 11.1 */
+	background: -webkit-linear-gradient(#0592D2, #03577E, #0592D2);	/*safari 5.1 */
+}
+
+/*************** SLIDER ******************/
+.carousel-text h1,
+.carousel-list li,
+.enigma_blog_read_btn
+{
+	color: #FAFAFA!important;
+	font-family: Georgia,Times,Times New Roman,serif!important;
+	font-weight: normal!important;
+}
+.carousel-text h1
+{
+	background-color: rgba(255,190,16,0.5)!important;
+}
+.carousel-list li
+{
+	background-color: rgba(5,146,210, .7);
+	text-transform: capitalize;
+}
+.enigma_blog_read_btn
+{
+	border: solid 1px #575757;
+	background-color: #91101C;
+	background-image: linear-gradient(to bottom, #91101C 50%, #575757 50%);
+}
+.carousel
+{
+	margin-bottom: 0!important;
+}	
+.carousel-inner
+{
+	 /*height: 500px;*/;
+}
+
+/************** FOOTER *************/
+.enigma_footer_area
+{
+	padding: 0!important;
+	background: #91101C;
+	border-top: groove 2px #F7F5F5;
+    border-bottom: groove 1px #FFBE10;
+}
+.enigma_footer_area p
+{
+	font-size: 12px!important;
+	margin: 0!important;
+	padding: 10px 0!important;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif!important;
+	color: #FAFAFA!important;
+	
+}
+.enigma_footer_area a
+{
+	color: #E0E0E0!important;
+}
+.enigma_footer_area a:hover
+{
+	text-decoration: underline;
+	font-style: italic;
+	color: #FAFAFA!important;
+}
+.enigma_footer_social_div
+{
+	margin: 0!important;
+}
+.social
+{
+	padding: 15px 0!important;
+	margin: 0!important;
+}
+.social li
+{
+	text-align: center;
+	height: 30px;
+	width: 30px;
+	border: solid 2px #E0E0E0!important;
+	background-size: 100% 200%!important;
+	background-image: linear-gradient(to bottom, transparent 0%, #333 90%)!important;
+}
+.social li a
+{
+	display: inline-block;
+}
+.social li:hover
+{
+	border: groove 2px #FAFAFA!important;
+	/* background-image: linear-gradient(to bottom, transparent 50%, #333 50%)!important; */
+}
+/* facebook */
+.social li.facebook:hover{
+	background-color: #333!important;
+}
+/* dribble */
+.social li.dribbble:hover{
+	background-color: #333!important;
+}
+/* dribble */
+.social li.twitter:hover{
+	background-color: #333!important;
+}
+/* linkedin */
+.social li.linkedin:hover{
+	background-color: #333!important;
+}
+/* youtube */
+.social li.youtube:hover{
+	background-color: #333!important;
+}
+.social i
+{
+	color: #FAFAFA!important;
+	font-size: 10pt!important;
+	line-height: 0!important;
+}	
+

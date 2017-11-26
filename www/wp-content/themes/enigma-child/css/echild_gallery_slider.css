@@ -1,0 +1,137 @@
+/**************************************************************************************/
+/**** THE GALLERY SLIDER source: https://codepen.io/dobladov/pen/kXAXJx?editors=0100 ***/
+/**** ALSO: http://freefrontend.com/css-sliders/									 ***/
+/**** Images must be 500 X 500 px													***/
+/***************************************************************************************/
+
+/*#gallery_slide {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+*/
+#gallery_slide
+ {
+	border: groove 2px #9B9B9B;
+	background-color: #575757;
+	padding: 0; 	/*5px 10px;*/
+	position: relative;
+	height: 400px;
+	/*top: 50%;
+	transform: translateY(-50%);*/
+	overflow: hidden;
+}
+#gallery_slide div 
+{
+	/*top: 7px;
+	border: groove 1px #FAFAFA;*/
+	position: absolute;
+	transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+	opacity: 1;
+}
+#gallery_slide div img 
+{
+	width: 400px;
+	transition: width 1s;
+}
+#gallery_slide div.hideLeft
+ {
+	left: 0%;
+	opacity: 0;
+	transform: translateY(50%) translateX(-50%);
+}
+#gallery_slide div.hideLeft img 
+{
+	width: 200px;
+}
+#gallery_slide div.prevLeftSecond 
+{
+	z-index: 4;
+	left: 15%;
+	transform: translateY(50%) translateX(-50%);
+	opacity: 0.7;
+}
+#gallery_slide div.prevLeftSecond img 
+{
+	width: 200px;
+}
+#gallery_slide div.prev 
+{
+	z-index: 5;
+	left: 30%;
+	transform: translateY(50px) translateX(-50%);
+}
+#gallery_slide div.prev img 
+{
+  width: 300px;
+}
+#gallery_slide div.selected
+ {	/* the middle one */
+	z-index: 10;
+	left: 50%;
+	transform: translateY(0px) translateX(-50%);
+}
+#gallery_slide div.next 
+{
+	z-index: 5;
+	left: 70%;
+	transform: translateY(50px) translateX(-50%);
+}
+#gallery_slide div.next img 
+{
+	width: 300px;
+}
+#gallery_slide div.nextRightSecond 
+{
+	z-index: 4;
+	left: 85%;
+	transform: translateY(50%) translateX(-50%);
+	opacity: 0.7;
+}
+#gallery_slide div.nextRightSecond img 
+{
+	width: 200px;
+}
+#gallery_slide div.hideRight 
+{
+	left: 100%;
+	opacity: 0;
+	transform: translateY(50%) translateX(-50%);
+}
+#gallery_slide div.hideRight img 
+{
+	width: 200px;
+}
+/* the buttons prev and next*/
+div.gallery_btn_prev_next 
+{
+	position: relative;
+	text-align: center;
+	margin: 10px 0 5px;
+	/*left: 50%;
+	transform: translateX(-50%);
+	bottom: 10px;*/
+}
+#gallery_prev, #gallery_next
+{
+	margin: 0 5px;
+	padding: 2px 5px;
+	display: inline-block;
+	border: groove 1px #63C5EF;
+	font-weight: bold;
+	border-radius: 4px;
+	color: #FAFAFA;
+    font-size: 10pt;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.gallery_btn_prev_next  div:hover
+{
+	border-color: #0592D2;
+	cursor: pointer;
+	background-color: #0592D2;
+	background: linear-gradient(#0592D2, #03577E, #0592D2);		/* standard */
+	background: -moz-linear-gradient(#0592D2, #03577E, #0592D2);	/* firefox 3.6 */
+	background: -o-linear-gradient(#0592D2, #03577E, #0592D2);	/* opera 11.1 */
+	background: -webkit-linear-gradient(#0592D2, #03577E, #0592D2);	/*safari 5.1 */
+}

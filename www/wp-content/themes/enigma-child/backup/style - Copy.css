@@ -1,0 +1,469 @@
+/****
+## Sub-theme creation ##
+REF: https://www.smashingmagazine.com/2016/01/create-customize-wordpress-child-theme/
+
+Theme Name: Enigma Child
+Theme URI: http://weblizar.com/themes/enigma-child/
+Description: Enigma is an incredibly superfine multipurpose responsive theme. This one is a Enigma Child Theme
+Author: Joseph Kasumba (Source: weblizar)
+Author URI: (Source: http://weblizar.com/)
+Template: enigma
+Version: 1.0.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, four-columns, custom-menu, right-sidebar, custom-background, featured-image-header, sticky-post, theme-options, threaded-comments, featured-images, flexible-header, translation-ready ,rtl-language-support , E-Commerce , Education , Entertainment , Portfolio
+Text Domain: enigma
+*/
+/*
+	font-family:Consolas,monospace;
+	font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-family:Arial,Helvetica,sans-serif;
+	content: '\f002';
+	font-family:FontAwesome
+	font-family:icomoon
+*/
+
+/* Custom style rules */
+.main_container
+{
+	background-color: #FAFAFA;
+}
+/* ******** Home page: Menu section *********** */
+
+.navigation_menu {
+    background-color: #0592D2;
+    border-top: 2px solid #FFDA10;
+}
+
+
+/* ******** Home page: Service section *********** */
+.enigma_service
+{
+	background-color: #FAFAFA;
+	padding-top: 40px!important;
+	padding-bottom: 20px!important;
+}
+.echild_home_desc 
+{
+	color: #333;
+	margin-top: 1em;
+	margin-bottom: 3em;
+	
+}
+.echild_home_desc p
+{
+	border: ridge #0592D2 4px;
+	border-radius: 25px;
+	padding: .5em;
+	margin: 0 .7em;
+	font-style: italic;
+	text-align: center;
+}
+
+/* Partners */
+.enigma_heading_title h3
+{
+	border-bottom:ridge #0592D2 4px;
+}
+.enigma_service_iocn i
+{
+	font-size: 40px!important;	
+}
+.enigma_service_area
+{
+	margin-bottom: 50px!important;
+}
+.enigma_service_detail  a
+{
+	color: #03577E;	
+}
+.echild_home_partners
+{
+	float: none;
+	display: inline-block;
+}
+.isotope
+{
+	text-align: center;
+}
+.enigma_service_detail
+{
+	text-align: left;
+}
+.enigma_service_detail p
+{
+	color: #333;
+}
+
+
+/**** Event Page ***/
+.echild_event_container
+{
+	padding: 30px 15px;	/* 30px 15px*/
+}
+.echild_event
+{
+	/*background-color: blue; box-sizing: border-box;*/
+	/*width: 600px;*/
+	border-radius: 20px 20px 0 0;
+}
+.echild_event_space
+{
+	padding: 5px;
+}
+.echild_event_title 
+{
+	padding: 10px;
+}
+.echild_event_title h3
+{
+	margin-top: 10px;
+}
+.echild_event_title a
+{
+	color: #FAFAFA;	/*333;*/
+}
+.echild_event_title a:hover
+{
+	font-weight: bold; 
+	
+}
+.echild_event_infogroup
+{
+	margin-top: 100px;	/********** Change for smaller screen divices ***********/
+	padding: 5px;
+	color: red;
+	
+}
+.echild_event_info
+{
+	background-repeat: repeat;
+	height: 300px;
+	text-align: center;
+}
+.echild_event_imgdefault
+{
+	background-image: url("http://localhost:8001/wp-content/uploads/2017/10/default_u_event2.jpg");
+}
+.echild_event_date
+{
+	text-align: center;
+	/*border: solid 3px black;*/
+	border-radius: 100%;
+	display: inline-block;
+	width: 8em;	
+	background-color: #FAFAFA;
+	opacity: .5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+	padding: 12px;
+}
+/*.echild_event_desc 
+{
+	
+}*/
+.echild_event_desc p /********** Change for smaller screen divices ***********/
+{
+	padding:0;
+	margin:0;
+	font-size: 10pt;
+	line-height: 20px;
+	font-style: italic;
+}
+.echild_event_line
+{
+    margin: 0.1em auto;
+    border: inset  3px;
+}
+
+/************** Event Page: Aside ***************/
+/*.enigma-sidebar
+{
+	;
+}*/
+@media screen and (max-width: 992px)
+{
+	.enigma-sidebar
+	{
+		text-align: center;
+	}
+}
+.echild_aside
+{
+	position: relative; 
+	display: inline-block; 
+	margin: 30px 15px; 
+	padding: 5px; 
+	background-color: blue; 
+	color: white; 
+	border: groove white 3px; 
+	border-radius: 10px;
+} 
+.echild_aside_title
+{
+	padding: 5px; 
+	text-align: center; 
+	font-size: 18pt;
+}
+.echild_aside_content
+{
+	padding: 5px; 
+	background-color: white; 
+	color: blue; 
+	border: double #FAFAFA 5px; 
+	border-radius: 5px; 
+	box-sizing: border-box;
+}
+.echild_aside_post
+{
+	text-align: left;
+}
+.echild_aside_li
+{
+	margin: 5px;
+}
+
+/************** Contact Form *****************/
+*
+{
+	margin: 0;
+}
+.container .enigma_blog_wrapper
+{
+	margin-bottom: 30px;
+}
+.echild_contact_form 
+{
+	margin: 25px auto;
+	padding: 5px;
+	width: 600px; /*to delete */
+	color: #575757;
+}
+
+.echild_contact_form label
+{
+	margin-bottom: 1px;
+	font-weight: normal;
+	font-size: 10pt;
+	color: #333;
+}
+.echild_contact_form input, textarea
+{
+	border: solid #333 1px;
+	border-radius: 4px;
+	background-color: #FAFAFA;
+	color: #333;
+	font-size: 9pt;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 4px;
+	margin: 0 0 5px;
+}
+.echild_contact_form_message
+{
+	text-align: center;
+	color: #0592D2;
+	margin: 5px;
+	padding: 10px;
+	font-size: 11px;
+}
+.person_name, .person_location
+{
+	text-align: center;
+}
+.person_name label, .person_location label
+{
+	display: block;
+	text-align: left;
+}	
+.group_name, .group_location
+{
+	display: inline-block;
+	width: 49.3%;
+}
+.message_content
+{
+	font-size: 11pt;
+}
+
+.echild_contact_form .block_button
+{
+	border: none;
+	padding: 2px;
+	margin: 10px;
+}
+.echild_contact_form .block_button div
+{
+	display: inline;  
+}
+.echild_contact_form .block_button div:hover
+{
+	border: groove #0592D2 2px;
+	background-color: #03577E;
+}
+.echild_contact_form .block_submit, .block_reset
+{
+	border: solid #63C5EF 1px;
+	border-radius: 4px;
+	background-color: #0592D2;
+	padding:2px;
+}
+.echild_contact_form .block_submit button, .block_reset button
+{
+	border: none;
+	border-radius: 4px;
+	background: transparent;    /* rgba(5,146,210, 0) doen't work IE9*/
+	color: #FAFAFA;
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 6px;
+}
+.echild_contact_form div.block_submit
+{
+	float: left;
+}   
+.echild_contact_form div.block_reset
+{
+	float: right;
+}
+
+/************ Contact page ************/
+.contact_container_1, .contact_container_2
+{
+	padding-top: 15px;	/* 40*/
+	padding-bottom: 20px;	/* 50*/
+	margin: 0;
+}
+.contact_container_1
+{
+	background-color: rgba(255,218,16, .3); /*ecf0f1;*/
+	border-top: 1px solid #DEE1E2;
+	border-bottom: 1px solid #DEE1E2;
+}
+.contact_container_2
+{
+	background-color: #FAFAFA;
+}
+
+/*.container
+{
+	
+}
+*/
+.contact_main_text
+{
+	margin: 15px 15px 25px;
+	padding: 15px 5px;
+	border-bottom: solid 4px #0592D2
+}
+.contact_main_text p
+{
+	color: #333;
+	text-align: center;
+	font-size: 26pt;
+	line-height: 1.5;
+	/*font-style: italic;*/
+}
+.contact_section_name 
+{
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.contact_section_name h3
+{
+	font-size: 24pt;
+	color: #333;
+	font-family: inherit;
+	font-weight: normal;
+}
+.contact_map_info
+{
+	margin: 15px auto; 
+	padding: 5px 15px; 
+	background-color: #91101C;
+	text-align: center;
+}
+.contact_map
+{
+	margin: 15px 10px 0;  
+	/*border: solid 1px yellow;*/
+	display: inline-block;
+}
+.contact_info
+{
+	text-align: left;
+	margin: 15px 10px; 
+	border-left: groove 2px #FFDA10;
+	border-right: groove 2px #FFDA10;
+	padding: 5px 15px; 
+	content: '\f002';
+	font-family: FontAwesome;
+	display: inline-block;
+	vertical-align: top;
+}
+.contact_info h3
+{
+	margin: 0 auto;
+	padding: 0 0px 10px;
+	color: #FAFAFA;
+	font-size: 24pt;
+	font-weight: normal;
+	font-family: inherit;
+}
+.contact_info_detail
+{
+	margin: 15px 0;
+	padding: 10px;
+	color: #E0E0E0;
+}
+.contact_info_detail p
+{
+	margin: 0 0 15px 0;
+	font-size: 16pt;
+	font-family: inherit;
+}
+.contact_office_hours
+{
+	margin: 15px 10px; 
+	border-top: solid 4px #f5f5f5;
+	border-bottom: solid 4px #f5f5f5;
+	padding: 4% 5px; 
+	display: inline-block; 
+	content: '\f002';
+	font-family: FontAwesome;
+	display: inline-block;
+	vertical-align: top;
+}
+.contact_office_hours h3
+{
+	line-height: small;
+	margin: 0 auto;
+	padding: 0 0px 10px;
+	color: #FAFAFA;
+	font-size: 20pt;
+	font-weight: normal;
+	font-family: inherit;
+	/*text-decoration: underline;*/
+}
+.contact_office_hours ul, p
+{
+	text-align: left;
+	color: #E0E0E0;
+}
+
+.contact_office_hours ul
+{
+	list-style-type: none;
+	margin: 5px 0;
+	padding: 0;
+}
+.contact_office_hours li 
+{
+  font: 11pt/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  border-bottom: 1px solid #FAFAFA;
+}
+.contact_office_hours p
+{
+	margin-top: 15px;
+	color: #FAFAFA;
+	font-size: 10pt;
+}

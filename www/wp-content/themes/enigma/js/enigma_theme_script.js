@@ -21,13 +21,16 @@
 			}
 		});
 	
+
 		jQuery('.enigma_scrollup').click(function () {
 			jQuery("html, body").animate({
 				scrollTop: 0
 			}, 600);
 			return false;
 		});
-	
+		
+		
+		
 	});	
 
 	

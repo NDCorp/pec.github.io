@@ -1,0 +1,184 @@
+/*******************************************************
+	Contains responsive css for smaller screen
+********************************************************/
+@media screen and (max-width: 991px)
+{
+	/************** Event Page: Aside **************/
+	.echild-sidebar-col-md-4
+	{
+		position: relative;
+		top: 0px;
+	}
+	
+	/************** Event Page: Events ***************/
+	.echild_col-md-8
+	{
+		width: 100%;
+	}	
+	/************ Object and Vision page: History wrapper *******************/
+	.history_wrapper
+	{
+		width: 48%; 
+	}
+	
+}
+
+/************** Contact Form *****************/
+@media screen and (max-width: 630px)
+{
+	.contact_main_text p
+	{
+		font-size: 20pt;
+		line-height: 1.5;
+	}
+	.echild_contact_form 
+	{
+		width: 290px;
+	}
+	
+	/************ Contact Information ************/
+	.contact_section_name h3
+	{
+		font-size: 18pt;
+	}
+
+}
+
+/* MENU */
+@media only screen and (max-width: 992px) and (min-width: 767px)
+{
+	#enigma_nav_top.affix 
+	{
+		border-bottom: groove 2px #F7F5F5!important;
+	}
+
+}
+
+@media screen and (max-width: 767px)
+{
+	/************ Menu **************/
+	.navigation_menu .container .navbar .navbar-collapse
+	{
+		margin-top: 1px;
+		margin-bottom: 18px;
+	}
+	.navbar-collapse > div > ul.navbar-nav
+	{
+		margin: 0;
+		float: none;
+	}
+	ul.navbar-nav > li
+	{
+		margin-right: 0!important;
+	}
+	ul.navbar-nav > li > a > i
+	{
+		display: block;
+	}
+	ul.navbar-nav ul.dropdown-menu
+	{
+		padding-left: 5px;
+	}	
+
+	/*********** Main slider Carousel ****************/
+	.carousel-text h1
+	{
+		font-size: 1.5em;		
+	}
+	.carousel-list li
+	{
+		font-size: 1em;
+		
+	}
+	.carousel-text .enigma_blog_read_btn 
+	{
+		font-size: 1.3em;
+	}
+	/************ Object and Vision page: History wrapper *******************/
+	.history_wrapper
+	{
+		width: 58%; 
+	}
+}
+
+@media only screen and (max-width: 600px) and (min-width: 450px)
+{
+	.carousel-caption
+	{
+		top: 0%;
+		padding-top: 0;
+	}
+	/************ Object and Vision page: History wrapper *******************/
+	.history_wrapper
+	{
+		width: 78%; 
+	}
+}
+@media only screen and (max-width: 450px) and (min-width: 260px)
+{
+	/*********** Main slider Carousel ****************/
+	.carousel-caption
+	{
+		top: 0%;
+		padding-top: 0;
+	}
+	.carousel-text h1
+	{
+		font-size: 1.2em;		
+	}
+	ul.carousel-list
+	{
+		margin-bottom: 0;
+	}
+	.carousel-list li
+	{
+		font-size: .8em;
+		line-height: 15px;
+		margin-bottom: 2px;
+		padding: 2px;
+	}
+	.carousel-text .enigma_blog_read_btn 
+	{
+		font-size: 1em;
+		padding: 3px 10px;
+	}
+	/************ Object and Vision page: History wrapper *******************/
+	.history_wrapper
+	{
+		width: 90%; 
+	}
+}
+@media only screen and (max-width: 260px)
+{
+	/*********** Main slider Carousel ****************/
+	.carousel-caption
+	{
+		top: 0%;
+		padding-top: 0;
+	}
+	.carousel-text h1
+	{
+		font-size: .9em;		
+	}
+	ul.carousel-list
+	{
+		margin-bottom: 0;
+	}
+	.carousel-list li
+	{
+		font-size: .6em;
+		line-height: 10px;
+		margin-bottom: 1px;
+		padding: 1px;
+	}
+	.carousel-text .enigma_blog_read_btn 
+	{
+		font-size: .7em;
+		padding: 3px 10px;
+	}
+	/************ Object and Vision page: History wrapper *******************/
+	.history_wrapper
+	{
+		width: 100%; 
+	}
+}

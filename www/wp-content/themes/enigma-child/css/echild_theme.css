@@ -1,0 +1,42 @@
+/***********************************************************
+			Web site Main style 
+************************************************************/
+/*body {
+   font-family: 'Open Sans', sans-serif;
+   }
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+} 
+
+.container {
+    padding-left: 0px ;
+    padding-right: 0px ;
+}
+a:hover, a:focus{
+	text-decoration: none ;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 0 0 1px rgba(0,0,0,0.01);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+*/
+/***** Navbar Menu  **********************************************************************************
+****************************************************************************************************/
+body 
+{
+   /*font-family: 'Open Sans', sans-serif;*/
+   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif!important; 
+}
+h1, h2, h3, h4, h5, h6
+{
+	font-family: Georgia, Times, 'Times New Roman', serif!important; 
+	font-weight: normal!important;
+}
+.navbar-collapse 
+{
+	box-shadow: none;
+}
