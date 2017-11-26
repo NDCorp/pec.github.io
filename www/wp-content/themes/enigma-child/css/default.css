@@ -12,3 +12,13 @@
 {
 	color:#9B9B9B;
 }
+/** Partners section **/
+.enigma_home_portfolio_caption
+{
+	border-bottom-color: #63C5EF;
+}
+.img-wrapper:hover .enigma_home_portfolio_caption
+{
+	background: #0592D2;
+}
+
